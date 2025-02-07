@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background: radial-gradient(
+    circle at top left,
+    rgba(17, 27, 41, 0.904),
+    rgba(0, 0, 0, 0.9)
+  );
+  background-color: #000; */
+  /* background-image: linear-gradient(to bottom, #191023, #1a1427, #1b172c, #1b1a30, #1b1d35, #191e34, #181e33, #171f32, #151c2c, #131925, #11161f, #0f1319); */
+  /* background: linear-gradient(
+    to bottom right,
+    #0f172a,
+    #1e293b); */
+    background-image: linear-gradient(to bottom, #111b24, #1e202c, #1a171e, #120d11, #000000);
+    background-position: cover;
+  min-height: 100vh;
+  margin: 0;
+}
+

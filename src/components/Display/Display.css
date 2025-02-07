@@ -1,0 +1,79 @@
+.bb {
+    width: 105px;
+    align-items: center;
+    padding: 5px 10px;
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid rgba(55, 65, 81, 0.2);
+    box-shadow: 
+      0 15px 25px -12px rgba(0, 0, 0, 0.25),
+      0 10px 20px -5px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bb::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg, 
+      transparent, 
+      rgba(255,255,255,0.05), 
+      transparent
+    );
+    transition: all 0.3s ease;
+  }
+  
+  .bb:hover {
+    transform: scale(1.05);
+    box-shadow: 
+      0 25px 35px -15px rgba(0, 0, 0, 0.3),
+      0 15px 25px -5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bb:hover::before {
+    left: 100%;
+  }
+  
+  .bbtext {
+    font-size: 1.3rem;
+    color: #ababbc;
+    transition: color 0.3s ease;
+  }
+  
+  .bb:hover .bbtext {
+    color: white;
+  }
+  .back-btn{
+    color: #ababbc;
+    transition: color 0.3s ease;
+  }
+
+  .bb:hover .back-btn{
+    color: white;
+  }
+  .tc-text{
+    color: rgb(65, 110, 207);
+    font-size: 1.3rem;
+  }
+  .ass-text{
+    color: rgb(101, 223, 101);
+    font-size: 1.3rem;
+  }
+  .card{
+    background-color: rgb(21, 27, 37);
+  }
+  .tc{
+    font-size: 1.1rem;
+  }
+  
+  .ass{
+    font-size: 1.05rem;
+  }

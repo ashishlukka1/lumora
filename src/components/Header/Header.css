@@ -1,0 +1,125 @@
+.header {
+  background-color: rgb(17,27,36);
+  padding: 1rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 20px;
+}
+
+.left-nav {
+  cursor: pointer;
+  gap: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.left-nav:hover {
+  transform: scale(1.03);
+}
+
+.lumora {
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.main {
+  flex-wrap: wrap;
+}
+
+.center-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.center-logo:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.center-logo.active {
+  background-color: rgba(255, 255, 255, 0.092);
+  
+}
+
+.center-logo span {
+  font-size: 0.95rem;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .main {
+    gap: 1.5rem;
+  }
+  
+  .center-logo {
+    padding: 0.5rem;
+  }
+  
+  .center-logo span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1051px) {
+  .header {
+    padding: 1rem;
+  }
+  
+  .main {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: rgb(18,27,36);
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .main.show {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .center-logo {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .lumora {
+    font-size: 1.2rem;
+  }
+  
+  .left-nav svg {
+    width: 40px;
+    height: 40px;
+  }
+}
