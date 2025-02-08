@@ -1,8 +1,11 @@
-# React + Vite
+Lumora
+🚀 **Live Demo:** [Lumora Stack](https://lumora-stack.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview
+MERN Stack Learning Hub is a React-based web platform designed for college students to access MERN stack technology-related videos. The platform features a user-friendly interface and uses Clerk authentication to ensure that only authorized students can access the content.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+✅ Secure Authentication – Implemented Clerk authentication to restrict access to college students.
+✅ User-Friendly UI – Intuitive design for easy navigation and smooth video playback.
+✅ Responsive Design – Optimized for both desktop and mobile devices.
+✅ MERN Stack Learning Resources – A curated collection of videos focused on MERN stack development.
