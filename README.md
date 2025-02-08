@@ -1,11 +1,18 @@
-Lumora
-🚀 **Live Demo:** [Lumora Stack](https://lumora-stack.netlify.app/)
+# LUMORA 
 
-Overview
-MERN Stack Learning Hub is a React-based web platform designed for college students to access MERN stack technology-related videos. The platform features a user-friendly interface and uses Clerk authentication to ensure that only authorized students can access the content.
+🚀 **Live Demo:** [Lumora Stack](https://lumora-stack.netlify.app/)  
 
-Features
-✅ Secure Authentication – Implemented Clerk authentication to restrict access to college students.
-✅ User-Friendly UI – Intuitive design for easy navigation and smooth video playback.
-✅ Responsive Design – Optimized for both desktop and mobile devices.
-✅ MERN Stack Learning Resources – A curated collection of videos focused on MERN stack development.
+## Overview  
+Lumora is a React-based web platform designed for college students to access **MERN stack technology-related videos**.  
+The platform features a **user-friendly interface** and uses **Clerk authentication** to ensure that only authorized students can access the content.  
+
+## Features  
+✅ **Secure Authentication** – Implemented Clerk authentication to restrict access to college students.  
+✅ **User-Friendly UI** – Intuitive design for easy navigation and smooth video playback.  
+✅ **Responsive Design** – Optimized for both desktop and mobile devices.  
+✅ **MERN Stack Learning Resources** – A curated collection of videos focused on MERN stack development.  
+
+## Tech Stack  
+- **Frontend:** React, CSS, Bootstrap  
+- **Authentication:** Clerk  
+- **Deployment:** Netlify  
