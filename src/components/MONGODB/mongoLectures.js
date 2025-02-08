@@ -8,7 +8,7 @@ const mongoLectures = [
         "Types of Modules in Node.js",
         "File Operations Using the fs Module in Node.js"
       ],
-      assignments: [
+      assignment: [
         "https://rajeshmeanstack.blogspot.com/2023/01/nodejs-assignment-1.html",
         "https://rajeshmeanstack.blogspot.com/2023/01/nodejs-assignment-2.html"
       ]
@@ -24,7 +24,7 @@ const mongoLectures = [
         "Developing APIs for Backend Communication",
         "Overview of REST client"
       ],
-      assignments: []
+      assignment: ""
     },
     {
       title: "Session 45",
@@ -34,7 +34,7 @@ const mongoLectures = [
         "Creation of User API",
         "API Controllers"
       ],
-      assignments: []
+      assignment: ""
     },
     {
       title: "Session 46",
@@ -45,7 +45,7 @@ const mongoLectures = [
         "Route-Level Middleware",
         "Refactoring"
       ],
-      assignments: [
+      assignment: [
         "https://rajeshmeanstack.blogspot.com/2023/01/nodejs-assignment-4.html",
         "https://rajeshmeanstack.blogspot.com/2023/01/nodejs-assignment-5.html"
       ]
@@ -59,7 +59,7 @@ const mongoLectures = [
         "MongoDB Commands",
         "Query Operations on Collections"
       ],
-      assignments: [],
+      assignment: "",
       references: [
         "https://rajeshmeanstack.blogspot.com/2023/01/mongodb-operations.html",
         "https://rajeshmeanstack.blogspot.com/2023/01/mongodb-operations-2.html"
@@ -71,7 +71,7 @@ const mongoLectures = [
       topics: [
         "Queries on Nested Documents"
       ],
-      assignments: []
+      assignment: ""
     },
     {
       title: "Session 49",
@@ -79,7 +79,7 @@ const mongoLectures = [
       topics: [
         "Connection of Express API with MongoDB Server by MongoDB Native Driver"
       ],
-      assignments: [
+      assignment: [
         "Implement Product API by connecting DB"
       ]
     },
@@ -89,7 +89,7 @@ const mongoLectures = [
       topics: [
         "Connect the Express API with MongoDB Server by ODM (Object Data Model) i.e. Mongoose"
       ],
-      assignments: [
+      assignment: [
         "Create Product Schema and model",
         "Read all products",
         "Create a new product"
@@ -102,7 +102,7 @@ const mongoLectures = [
         "Validation Error for Schema using throw",
         "CRUD Operations with Mongoose"
       ],
-      assignments: [
+      assignment: [
         "Read a product by ObjectID",
         "Read a product by product name",
         "Update a product",
@@ -118,7 +118,7 @@ const mongoLectures = [
       topics: [
         "Implement User Registration with Hashing Password"
       ],
-      assignments: [
+      assignment: [
         "Implement User Registration with Password Hashing Route in User API",
         "Make username as unique property of user doc"
       ]
@@ -129,7 +129,7 @@ const mongoLectures = [
       topics: [
         "User Login Authentication & Token Verification to Protect Routes"
       ],
-      assignments: [
+      assignment: [
         "Implement User Authentication & Token Verification Mechanism to Protect Routes"
       ]
     },
@@ -139,7 +139,7 @@ const mongoLectures = [
       topics: [
         "Implementation of Nested Schemas"
       ],
-      assignments: [
+      assignment: [
         "Create Employee schema with name, skills array, address, prevExperiences array and convert this into array of objects"
       ]
     }

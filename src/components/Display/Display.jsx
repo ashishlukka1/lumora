@@ -120,7 +120,7 @@ function Display() {
             </h5>
             <ul className="list-unstyled">
               {selectedLecture.topics.map((topic, index) => (
-                <li key={index} className="mb-2 tc d-flex align-items-center text-light">
+                <li key={index} className="mb-2 tc d-flex text-light">
                   <span className="me-2  text-primary">•</span>
                   <div className="tc">{topic}</div>
                   
