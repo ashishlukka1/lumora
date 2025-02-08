@@ -237,3 +237,22 @@ body {
 /* body{
   background-color: #1a1e2e;
 } */
+.linkedin-link {
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.linkedin-link:hover {
+  color: #d9ff00; /* LinkedIn Blue */
+}
+
+.linkedin-link:hover svg {
+  color: #0077b5; /* Change icon color */
+}
+.line{
+  border-top:2px solid rgb(50,60,75);
+
+}

@@ -1,9 +1,8 @@
-
-  import { useNavigate, useLocation } from "react-router-dom";
-  import { FaCode } from "react-icons/fa";
-  import { FaHtml5, FaCss3Alt, FaJsSquare,FaBootstrap, FaReact, } from 'react-icons/fa';
-  import { CiDatabase } from "react-icons/ci";
-  import "./Home.css";
+import { useNavigate, useLocation } from "react-router-dom";
+import { FaCode, FaHtml5, FaCss3Alt, FaJsSquare, FaBootstrap, FaReact } from "react-icons/fa";
+import { CiDatabase } from "react-icons/ci";
+import { RxLinkedinLogo } from "react-icons/rx";
+import "./Home.css";
 
   function Home() {
         const navigate = useNavigate();
@@ -113,8 +112,22 @@
           ))}
         </div>
       </div>
+          
+      <footer className="text-white text-center py-1 mt-5 ">
+        <div className="container line">
+          <p className="lead fs-5">©2025 VNRVJIET</p>
+          <p className="lead fs-5">Special thanks to <strong>Rajesh Sir</strong> for his invaluable guidance.</p>
+          <a 
+  href="https://www.linkedin.com/in/rajesh-t?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="linkedin-link"
+>
+  <RxLinkedinLogo size={33} className="mx-1" /> <span className="lead fs-">Connect!</span>
+</a>
 
-
+        </div>
+      </footer>
 
       </div>
     );

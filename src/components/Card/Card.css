@@ -1,65 +1,214 @@
+/* General Card Styling */
 .card1 {
-  background: #284172;
-  border-radius: 12px;
-  box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
-  padding: 15px 20px;
-  width: 400px;
-  /* margin: 20px auto; */
-  transition: box-shadow 0.3s ease-in-out;
-  font-family: 'Roboto',sans-serif;
-  border-left: 6px solid #007bff;
-}
-
-.card1:hover {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
-.card1 h2 {
+  background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  width: 350px;  /* Fixed Width */
+  height: 300px; /* Increased Height */
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effects */
+.card1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 40px rgba(255, 255, 255, 0.2);
+}
+
+/* Title Styling */
+.card1 h2 {
   font-size: 1.3em;
   font-weight: bold;
   color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
 }
 
+/* External Link Icon */
 .external-link-icon {
+  font-size: 1.3em;
   cursor: pointer;
-  transition: color 0.3s ease-in-out;
+  color: #00ccff;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .external-link-icon:hover {
-  color: #007bff; 
-  justify-content: ;
+  color: #ffdd57;
+  transform: scale(1.2);
 }
 
+/* Subtitle Styling */
 .card1 .subtitle {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #bbbbbb;
   margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+/* List Styling */
 .card1 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  flex-grow: 1; /* Ensures the list takes available space */
+  overflow-y: auto; /* Only vertical scrollbar */
+  max-height: 140px; /* Prevents overflow */
+  white-space: normal; /* Ensures text wraps properly */
 }
 
+/* Remove Left-Right Scrollbar */
+.card1 ul::-webkit-scrollbar {
+  width: 6px; /* Thin scrollbar */
+}
+
+.card1 ul::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.card1 ul::-webkit-scrollbar-thumb {
+  background: #00ccff;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.card1 ul::-webkit-scrollbar-thumb:hover {
+  background: #ffdd57;
+}
+
+/* Prevent Horizontal Scroll */
+.card1 ul::-webkit-scrollbar-horizontal {
+  display: none;
+}
+
+.card1 ul {
+  overflow-x: hidden; /* Hides horizontal scrollbar */
+}
+
+/* List Items */
 .card1 li {
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #ffffff;
+  margin-bottom: 6px;
+  display: flex;
+  /* align-items: center; */
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .card1 li::before {
-  content: "•";
-  font-size: 1.5rem;
-  color: #007bff;
-  margin-right: 10px;
+  content: "●";  /* Bullet Point */
+  font-size: 1.1rem;
+  color: #00ccff;
+  margin-right: 8px;
 }
 
-.card-grid{
-  display: grid;
+.card1 li:hover {
+  transform: translateX(5px);
+  color: #ffdd57;
 }
+
+.card1 li:hover::before {
+  color: #ffdd57;
+}
+
+/* Watch Now Button */
+.watch-now-btn {
+  background: linear-gradient(135deg, #00ccff, #007bff);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  margin-top: auto; /* Pushes button to bottom */
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.watch-now-btn:hover {
+  background: linear-gradient(135deg, #ffdd57, #ffaa00);
+  color: #111;
+  transform: scale(1.05);
+}
+
+/* Responsive Grid for Multiple Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  overflow-x: hidden; /* Prevents horizontal scroll for the grid */
+}
+/* Watch Now Button */
+.watch-now-btn {
+  background: rgba(0, 204, 255, 0.2);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: 2px solid #00ccff;
+  border-radius: 25px;
+  cursor: pointer;
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px rgba(0, 204, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.watch-now-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: all 0.4s ease-in-out;
+}
+
+.watch-now-btn:hover::before {
+  left: 100%;
+}
+
+.watch-now-btn:hover {
+  background: rgba(0, 204, 255, 0.4);
+  box-shadow: 0 6px 12px rgba(0, 204, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.watch-now-btn svg {
+  margin-left: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.watch-now-btn:hover svg {
+  transform: translateX(3px);
+}
+

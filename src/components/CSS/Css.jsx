@@ -19,7 +19,7 @@ const Css = () => {
         </div>
       </div>
       <div className="lecture-container ">
-        <div className="lecture-list d-flex flex-wrap gap-3 justify-content">
+        <div className="lecture-list d-flex flex-wrap gap-3 justify-content-center">
           {cssLectures.map((lecture, index) => (
             <Card 
               key={index} 
