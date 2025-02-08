@@ -1,15 +1,18 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 import { useUser } from "@clerk/clerk-react";
-// import './Auth.css';
+import "./Auth.css";
 
 const AuthMiddleware = ({ children }) => {
   const { isSignedIn, isLoaded } = useUser();
 
   if (!isLoaded) {
     return (
-      <div className="loader-container">
-        <div className="spinner"></div>
+      <div className="loading-container">
+        <div className="loading-spinner">
+          <div className="spinner-ring"></div>
+          <p className="loading-text">Loading...</p>
+        </div>
       </div>
     );
   }

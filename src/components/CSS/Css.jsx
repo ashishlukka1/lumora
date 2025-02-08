@@ -15,7 +15,7 @@ const Css = () => {
     <div className="container-fluid py-4 ">
       <div className="row">
         <div className="col-12">
-          {/* <h2 className="text-center mb-4">Bootstrap Lectures</h2> */}
+          <h5 className="text-center mb-4">*Refer from Lecture-3 for CSS</h5>
         </div>
       </div>
       <div className="lecture-container ">
