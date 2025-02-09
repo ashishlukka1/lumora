@@ -3,7 +3,7 @@
 🚀 **Live Demo:**  [Lumora](https://lumora-stack.netlify.app/)  
 
 ## Overview  
-Lumora is a React-based web platform designed for college students to access **MERN stack technology-related videos**.  
+Lumora is a web platform designed for college students to access **MERN stack technology-related videos**.  
 The platform features a **user-friendly interface** and uses **Clerk authentication** to ensure that only authorized students can access the content.  
 
 ## Features  
