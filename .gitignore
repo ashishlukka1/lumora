@@ -11,6 +11,12 @@ node_modules
 dist
 dist-ssr
 *.local
+bootstrapLectures
+cssLectures
+htmlLectures
+jsLectures
+reactLectures
+mongoLectures
 
 # Editor directories and files
 .vscode/*
