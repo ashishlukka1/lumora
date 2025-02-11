@@ -17,6 +17,7 @@ htmlLectures
 jsLectures
 reactLectures
 mongoLectures
+**/*Lectures.js
 
 # Editor directories and files
 .vscode/*
