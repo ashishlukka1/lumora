@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/ashishlukka1/lumora",
+  "homepage": "https://ashishlukka1.github.io/lumora",
   "name": "lumora",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "vite build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
