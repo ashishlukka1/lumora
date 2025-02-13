@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import RootLayout from "./components/RootLayout";
@@ -11,34 +11,32 @@ import Mongo from "./components/MONGODB/Mongo";
 import Rjs from "./components/REACT/Rjs";
 import Bootstrap from "./components/Bootstrap/Bootstrap";
 import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/clerk-react";
-import AuthMiddleware from "../src/AuthMiddleware.jsx";
+import AuthMiddleware from "./AuthMiddleware.jsx";
 import SignInPage from "./components/SignIn/SignInPage.jsx";
 import SignUpPage from "./components/SignUp/SignUpPage.jsx";
 import LectureDisplay from "./components/Display/Display";
 
-const router = createBrowserRouter([
-  { path: "/", element: <Home /> },
-  {
-    path: "/main",
-    element: <AuthMiddleware><RootLayout /></AuthMiddleware>,
-    children: [
-      { path: "html", element: <AuthMiddleware><Html /></AuthMiddleware> },
-      { path: "css", element: <AuthMiddleware><CSS /></AuthMiddleware> },
-      { path: "bootstrap", element: <AuthMiddleware><Bootstrap /></AuthMiddleware> },
-      { path: "js", element: <AuthMiddleware><Js /></AuthMiddleware> },
-      { path: "react", element: <AuthMiddleware><Rjs /></AuthMiddleware> },
-      { path: "mongo", element: <AuthMiddleware><Mongo /></AuthMiddleware> },
-    ],
-  },
-  { path: "/lecture/:technology/:lectureId", element: <AuthMiddleware><LectureDisplay /></AuthMiddleware> },
-  { path: "/display", element: <AuthMiddleware><LectureDisplay /></AuthMiddleware> },
-  { path: "/sign-in", element: <SignInPage /> },
-  { path: "/sign-up", element: <SignUpPage /> },
-  { path: "*", element: <SignedOut><RedirectToSignIn /></SignedOut> },
-]);
-
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sign-in" element={<SignInPage />} />
+        <Route path="/sign-up" element={<SignUpPage />} />
+        <Route path="/main" element={<AuthMiddleware><RootLayout /></AuthMiddleware>}>
+          <Route path="html" element={<AuthMiddleware><Html /></AuthMiddleware>} />
+          <Route path="css" element={<AuthMiddleware><CSS /></AuthMiddleware>} />
+          <Route path="bootstrap" element={<AuthMiddleware><Bootstrap /></AuthMiddleware>} />
+          <Route path="js" element={<AuthMiddleware><Js /></AuthMiddleware>} />
+          <Route path="react" element={<AuthMiddleware><Rjs /></AuthMiddleware>} />
+          <Route path="mongo" element={<AuthMiddleware><Mongo /></AuthMiddleware>} />
+        </Route>
+        <Route path="/lecture/:technology/:lectureId" element={<AuthMiddleware><LectureDisplay /></AuthMiddleware>} />
+        <Route path="/display" element={<AuthMiddleware><LectureDisplay /></AuthMiddleware>} />
+        <Route path="*" element={<SignedOut><RedirectToSignIn /></SignedOut>} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
