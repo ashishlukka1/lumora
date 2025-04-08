@@ -15,7 +15,7 @@ The platform features a **user-friendly interface** and uses **Clerk authenticat
 ## Tech Stack  
 - **Frontend:** React, CSS, Bootstrap  
 - **Authentication:** Clerk  
-- **Deployment:** Netlify,Vercel
+- **Deployment:** Netlify and Vercel
 
 ## Team
 - Ashish Lukka
